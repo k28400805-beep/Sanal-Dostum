@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#fff8f1">
+  <title>Sanal Dostum | Piksel Evcil Hayvan</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@500;600;700;800;900&family=Press+Start+2P&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="app-shell">
+    <header class="topbar">
+      <div class="brand">
+        <span class="brand-mark" aria-hidden="true">🐾</span>
+        <div>
+          <p class="eyebrow">DİJİTAL ARKADAŞIN</p>
+          <h1>Sanal Dostum</h1>
+        </div>
+      </div>
+      <div class="sound-status" aria-live="polite">
+        <span class="sound-dot"></span>
+        <span>Sesler açık</span>
+      </div>
+    </header>
+
+    <section class="game-grid">
+      <section class="pet-card card" aria-labelledby="pet-status">
+        <div class="sparkle sparkle-one">✦</div>
+        <div class="sparkle sparkle-two">✧</div>
+        <div class="pet-stage">
+          <div class="halo"></div>
+          <div id="pet" class="pet pet-idle" role="img" aria-label="Sanal dostun mutlu yüzü">
+            <div class="ear ear-left"></div><div class="ear ear-right"></div>
+            <div class="pet-face">
+              <span class="eye eye-left"></span><span class="eye eye-right"></span>
+              <span class="cheek cheek-left"></span><span class="cheek cheek-right"></span>
+              <span class="mouth">⌣</span>
+            </div>
+          </div>
+          <div class="stage-shadow"></div>
+        </div>
+        <div class="pet-copy">
+          <span class="status-pill"><span class="status-pulse"></span> <span id="status-label">İyi hissediyor</span></span>
+          <h2 id="pet-status">Çok mutlu!</h2>
+          <p id="pet-message">Seninle vakit geçirmeye bayılıyor.</p>
+        </div>
+      </section>
+
+      <section class="dashboard card" aria-labelledby="needs-title">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">GÜNLÜK BAKIM</p>
+            <h2 id="needs-title">İhtiyaçları</h2>
+          </div>
+          <span class="heart-icon" aria-hidden="true">♥</span>
+        </div>
+        <div class="stats" aria-label="Evcil hayvan ihtiyaçları">
+          <div class="stat-row">
+            <div class="stat-info"><span class="stat-icon food">🍎</span><span>Açlık</span><strong id="hunger-value">82%</strong></div>
+            <div class="progress-track"><div id="hunger-bar" class="progress-fill hunger" style="width: 82%"></div></div>
+          </div>
+          <div class="stat-row">
+            <div class="stat-info"><span class="stat-icon joy">☀</span><span>Mutluluk</span><strong id="happiness-value">76%</strong></div>
+            <div class="progress-track"><div id="happiness-bar" class="progress-fill happiness" style="width: 76%"></div></div>
+          </div>
+          <div class="stat-row">
+            <div class="stat-info"><span class="stat-icon energy">⚡</span><span>Enerji</span><strong id="energy-value">88%</strong></div>
+            <div class="progress-track"><div id="energy-bar" class="progress-fill energy" style="width: 88%"></div></div>
+          </div>
+        </div>
+        <div class="tip"><span>💡</span><p>İhtiyaçları her 3 saniyede biraz azalır. Ona iyi bakmayı unutma!</p></div>
+      </section>
+    </section>
+
+    <section class="actions-card card" aria-labelledby="actions-title">
+      <div class="section-heading action-heading">
+        <div><p class="eyebrow">ETKİLEŞİM ZAMANI</p><h2 id="actions-title">Ne yapmak istersin?</h2></div>
+        <span class="mini-paw" aria-hidden="true">🐾</span>
+      </div>
+      <div class="actions">
+        <button class="action-button feed" data-action="feed" type="button"><span class="button-icon">🍎</span><span><b>Besle</b><small>+20% Açlık</small></span></button>
+        <button class="action-button play" data-action="play" type="button"><span class="button-icon">🎾</span><span><b>Oyna</b><small>+20% Mutluluk</small></span></button>
+        <button class="action-button sleep" data-action="sleep" type="button"><span class="button-icon">🌙</span><span><b>Uyut</b><small>+30% Enerji</small></span></button>
+      </div>
+      <p class="interaction-note" id="interaction-note" aria-live="polite">Birlikte güzel bir gün geçirelim! ✨</p>
+    </section>
+    <footer><span>♥</span> Sanal Dostum ile sevgi dolu anlar <span>♥</span></footer>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
